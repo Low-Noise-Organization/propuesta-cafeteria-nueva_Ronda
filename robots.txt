@@ -1,0 +1,5 @@
+# Robots.txt – Nueva Ronda
+User-agent: *
+Allow: /
+
+Sitemap: https://barronda.es/sitemap.xml

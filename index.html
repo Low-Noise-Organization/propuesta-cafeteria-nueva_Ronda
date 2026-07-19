@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nueva Ronda – Bar de Tapas en Córdoba | Tradición y Sabor</title>
+  <meta name="description" content="Nueva Ronda, bar de tapas en Córdoba. Disfruta de croquetas de rabo de toro, salmorejo y tapas variadas. Terraza, ambiente familiar, reservas. ¡Visítanos!" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://barronda.es/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:title" content="Nueva Ronda – Bar de Tapas en Córdoba" />
+  <meta property="og:description" content="Tapas tradicionales andaluzas en el Distrito Sur. Croquetas de rabo de toro, salmorejo, berenjenas y mucho más." />
+  <meta property="og:url" content="https://barronda.es/" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Nueva Ronda" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nueva Ronda – Bar de Tapas en Córdoba" />
+  <meta name="twitter:description" content="Tapas tradicionales andaluzas en el Distrito Sur. ¡Te esperamos!" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Nueva Ronda",
+    "alternateName": "Bar Ronda",
+    "description": "Bar de tapas y cafetería en el Distrito Sur de Córdoba. Tradición andaluza, ambiente acogedor y familiar.",
+    "url": "https://barronda.es/",
+    "telephone": "+34957290801",
+    "email": "contacto@barronda.es",
+    "priceRange": "€€",
+    "servesCuisine": "Andaluza, Española",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Ronda, S/N",
+      "addressLocality": "Córdoba",
+      "addressRegion": "Córdoba",
+      "postalCode": "14013",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.8922505,
+      "longitude": -4.7668249
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.3",
+      "bestRating": "5",
+      "ratingCount": "287"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:30",
+        "closes": "14:00"
+      }
+    ],
+    "image": "assets/hero-bar.jpg",
+    "sameAs": [
+      "https://www.instagram.com/barrondacordoba",
+      "https://www.facebook.com/barrondacordoba"
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23C1292E'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23FDFBF7' font-family='serif'%3ENR%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== SCROLL INDICATOR ========== -->
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de lectura"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a href="#" class="logo" aria-label="Nueva Ronda, volver al inicio">
+        <span class="logo-icon" aria-hidden="true">🍷</span>
+        <span class="logo-text">Nueva <span class="logo-accent">Ronda</span></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </button>
+      <nav id="navMenu" class="nav-menu" role="navigation" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="#menu" class="nav-link">Especialidades</a></li>
+          <li><a href="#gallery" class="nav-link">Galería</a></li>
+          <li><a href="#reviews" class="nav-link">Opiniones</a></li>
+          <li><a href="#location" class="nav-link">Dónde estamos</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero" aria-label="Presentación del bar Nueva Ronda">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">Desde 1998 en Córdoba</span>
+      <h1 class="hero-title">Nueva <span class="text-accent">Ronda</span></h1>
+      <p class="hero-subtitle">Tapas tradicionales andaluzas con el sabor auténtico del Distrito Sur</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary" aria-label="Ver nuestra carta de tapas">Ver Carta</a>
+        <a href="#contact" class="btn btn-secondary" aria-label="Contactar con Nueva Ronda">Contacto</a>
+      </div>
+      <div class="hero-rating" aria-label="Valoración media 4.3 sobre 5 en Google">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span class="rating-text"><strong>4.3</strong> en Google</span>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Desplázate hacia abajo para conocer más">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestra Historia</span>
+        <h2 class="section-title" id="about-title">Sobre Nosotros</h2>
+        <div class="divider" aria-hidden="true"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">En el corazón del Distrito Sur, <strong>Nueva Ronda</strong> —conocido de toda la vida como <strong>Bar Ronda</strong>— es un punto de encuentro para quienes buscan la verdadera esencia de la gastronomía cordobesa.</p>
+          <p>Desde nuestros inicios, hemos mantenido vivo el espíritu de la tradición: producto fresco, recetas de siempre y un trato cercano que hace sentir a cada cliente como en casa. Nuestra cocina es un homenaje a los sabores de siempre, donde cada tapa cuenta una historia.</p>
+          <p>Contamos con <strong>terraza al aire libre</strong>, acceso adaptado, servicio para llevar y un ambiente ideal para compartir con amigos o en familia. Y para los amantes del deporte, retransmitimos los principales eventos en nuestras pantallas.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <span class="feature-icon" aria-hidden="true">🌿</span>
+              <span>Producto local</span>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon" aria-hidden="true">🍳</span>
+              <span>Recetas caseras</span>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon" aria-hidden="true">🤝</span>
+              <span>Trato familiar</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image-wrapper">
+          <div class="about-image" aria-hidden="true">
+            <svg viewBox="0 0 600 450" class="about-svg" aria-hidden="true">
+              <rect width="600" height="450" fill="#C1292E" rx="12" />
+              <rect x="20" y="20" width="560" height="410" rx="8" fill="#FDFBF7" />
+              <text x="300" y="160" font-family="Playfair Display, serif" font-size="32" text-anchor="middle" fill="#C1292E">Nueva Ronda</text>
+              <text x="300" y="210" font-family="Inter, sans-serif" font-size="16" text-anchor="middle" fill="#1A1A1A">Tradición desde 1998</text>
+              <circle cx="200" cy="310" r="40" fill="#D4A24C" opacity="0.3" />
+              <circle cx="400" cy="310" r="40" fill="#2C5F2D" opacity="0.3" />
+              <text x="300" y="380" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" fill="#666">🍷 Tapas · Café · Buen ambiente</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU / SPECIALITIES ========== -->
+  <section class="section menu" id="menu" aria-labelledby="menu-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestra Cocina</span>
+        <h2 class="section-title" id="menu-title">Especialidades</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-desc">Elaboramos cada plato con producto fresco y recetas que han pasado de generación en generación. Estas son nuestras señas de identidad.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#C1292E" stroke-width="2"><circle cx="32" cy="32" r="28"/><path d="M22 32h20M32 22v20"/></svg>
+          </div>
+          <h3 class="menu-card-title">Croquetas de Rabo de Toro</h3>
+          <p class="menu-card-desc">Crema suave de rabo de toro estofado con una textura crujiente por fuera y cremosa por dentro. Nuestras más vendidas.</p>
+          <span class="menu-card-price">8,50 €</span>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#C1292E" stroke-width="2"><circle cx="32" cy="32" r="28"/><path d="M22 32h20M32 22v20"/></svg>
+          </div>
+          <h3 class="menu-card-title">Berenjenas con Miel de Caña</h3>
+          <p class="menu-card-desc">Berenjenas fritas en tempura finísima, bañadas con miel de caña de la zona. El contraste dulce-salado perfecto.</p>
+          <span class="menu-card-price">7,00 €</span>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#C1292E" stroke-width="2"><circle cx="32" cy="32" r="28"/><path d="M22 32h20M32 22v20"/></svg>
+          </div>
+          <h3 class="menu-card-title">Salmorejo Cordobés</h3>
+          <p class="menu-card-desc">Nuestra versión del clásico salmorejo, cremoso y equilibrado, coronado con huevo duro y jamón ibérico.</p>
+          <span class="menu-card-price">6,50 €</span>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#C1292E" stroke-width="2"><circle cx="32" cy="32" r="28"/><path d="M22 32h20M32 22v20"/></svg>
+          </div>
+          <h3 class="menu-card-title">Calamares Fritos</h3>
+          <p class="menu-card-desc">Calamares frescos rebozados en harina de garbanzo, fritos en aceite de oliva virgen extra. Acompañados de limón y alioli.</p>
+          <span class="menu-card-price">9,00 €</span>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#C1292E" stroke-width="2"><circle cx="32" cy="32" r="28"/><path d="M22 32h20M32 22v20"/></svg>
+          </div>
+          <h3 class="menu-card-title">Tabla de Ibéricos</h3>
+          <p class="menu-card-desc">Selección de jamón, chorizo, salchichón y lomo ibérico con queso manchego curado y pan con tomate.</p>
+          <span class="menu-card-price">14,00 €</span>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#C1292E" stroke-width="2"><circle cx="32" cy="32" r="28"/><path d="M22 32h20M32 22v20"/></svg>
+          </div>
+          <h3 class="menu-card-title">Montaditos Variados</h3>
+          <p class="menu-card-desc">Pan artesanal con pringá, carne mechada, atún en adobo o lomo con queso. Ideales para acompañar una cerveza bien fría.</p>
+          <span class="menu-card-price">5,50 €</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galería</span>
+        <h2 class="section-title" id="gallery-title">Nuestro Espacio</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-desc">Así es Nueva Ronda. Un vistazo a nuestro ambiente, nuestra terraza y, por supuesto, nuestra comida.</p>
+      </div>
+    </div>
+    <div class="gallery-grid" role="list" aria-label="Galería de imágenes de desayunos">
+      <figure class="gallery-item" role="listitem">
+        <div class="gallery-img" tabindex="0" role="button" aria-label="Ver imagen ampliada" data-label="Desayuno 1">
+          <img src="assets/exterior.jpg" alt="Desayuno" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <figcaption class="gallery-caption">Desayuno 1</figcaption>
+      </figure>
+      <figure class="gallery-item" role="listitem">
+        <div class="gallery-img" tabindex="0" role="button" aria-label="Ver imagen ampliada" data-label="Desayuno 2">
+          <img src="assets/hero-bar.jpg" alt="Desayuno" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <figcaption class="gallery-caption">Desayuno 2</figcaption>
+      </figure>
+      <figure class="gallery-item" role="listitem">
+        <div class="gallery-img" tabindex="0" role="button" aria-label="Ver imagen ampliada" data-label="Desayuno 3">
+          <img src="assets/tapas-1.jpg" alt="Desayuno" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <figcaption class="gallery-caption">Desayuno 3</figcaption>
+      </figure>
+      <figure class="gallery-item" role="listitem">
+        <div class="gallery-img" tabindex="0" role="button" aria-label="Ver imagen ampliada" data-label="Desayuno 4">
+          <img src="assets/interior.jpg" alt="Desayuno" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <figcaption class="gallery-caption">Desayuno 4</figcaption>
+      </figure>
+      <figure class="gallery-item" role="listitem">
+        <div class="gallery-img" tabindex="0" role="button" aria-label="Ver imagen ampliada" data-label="Desayuno 5">
+          <img src="assets/tapas-2.jpg" alt="Desayuno" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <figcaption class="gallery-caption">Desayuno 5</figcaption>
+      </figure>
+      <figure class="gallery-item" role="listitem">
+        <div class="gallery-img" tabindex="0" role="button" aria-label="Ver imagen ampliada" data-label="Desayuno 4">
+          <img src="assets/interior.jpg" alt="Desayuno" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <figcaption class="gallery-caption">Desayuno 6</figcaption>
+      </figure>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes" hidden>
+      <button class="lightbox-close" aria-label="Cerrar visor">&times;</button>
+      <div class="lightbox-content">
+        <div class="lightbox-svg-container" id="lightboxSvg"></div>
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS ========== -->
+  <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Opiniones</span>
+        <h2 class="section-title" id="reviews-title">Lo que dicen nuestros clientes</h2>
+        <div class="divider" aria-hidden="true"></div>
+      </div>
+      <div class="reviews-summary">
+        <div class="reviews-rating-box">
+          <span class="reviews-big-number">4,3</span>
+          <div class="reviews-stars" aria-label="4.3 de 5 estrellas">
+            <svg viewBox="0 0 120 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(24)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(48)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(72)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#ddd" transform="translate(96)"/></svg>
+          </div>
+          <p class="reviews-source"><strong>287 valoraciones</strong> en Google</p>
+          <a href="https://search.google.com/local/reviews?placeid=" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Ver opiniones en Google">
+            Ver en Google
+          </a>
+        </div>
+        <div class="reviews-highlights">
+          <div class="review-item">
+            <div class="review-stars" aria-label="5 estrellas">
+              <svg viewBox="0 0 120 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(24)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(48)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(72)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(96)"/></svg>
+            </div>
+            <p class="review-text">"Auténtica cocina cordobesa. Las croquetas de rabo de toro son espectaculares. Volveremos sin duda."</p>
+          </div>
+          <div class="review-item">
+            <div class="review-stars" aria-label="4 estrellas">
+              <svg viewBox="0 0 120 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(24)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(48)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(72)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#ddd" transform="translate(96)"/></svg>
+            </div>
+            <p class="review-text">"Salmorejo de los mejores que he probado. La terraza es ideal para el aperitivo. Muy recomendable."</p>
+          </div>
+          <div class="review-item">
+            <div class="review-stars" aria-label="5 estrellas">
+              <svg viewBox="0 0 120 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(24)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(48)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(72)"/><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#D4A24C" transform="translate(96)"/></svg>
+            </div>
+            <p class="review-text">"Ambiente familiar, personal encantador y tapas de calidad. Un clásico del Distrito Sur que nunca defrauda."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOCATION / MAP ========== -->
+  <section class="section location" id="location" aria-labelledby="location-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dónde estamos</span>
+        <h2 class="section-title" id="location-title">Encuéntranos</h2>
+        <div class="divider" aria-hidden="true"></div>
+      </div>
+      <div class="location-grid">
+        <div class="location-info">
+          <address class="location-address">
+            <span class="location-icon" aria-hidden="true">📍</span>
+            <span>Calle Ronda, S/N, 14013 Córdoba</span>
+          </address>
+          <div class="location-details">
+            <div class="loc-item">
+              <span class="loc-icon" aria-hidden="true">🕐</span>
+              <div>
+                <strong>Horario</strong>
+                <p>Lun–Vie: 7:00–19:00<br>Sáb: 8:30–14:00</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <span class="loc-icon" aria-hidden="true">📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <p><a href="tel:+34957290801" aria-label="Llamar al 957 29 08 01">957 29 08 01</a></p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <span class="loc-icon" aria-hidden="true">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:contacto@barronda.es">contacto@barronda.es</a></p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <span class="loc-icon" aria-hidden="true">💶</span>
+              <div>
+                <strong>Precio medio</strong>
+                <p>10–20 € por persona</p>
+              </div>
+            </div>
+          </div>
+          <div class="location-buttons">
+            <a href="tel:+34957290801" class="btn btn-primary btn-icon" aria-label="Llamar ahora">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              Llamar ahora
+            </a>
+            <a href="https://wa.me/34957290801?text=Hola,%20me%20gustaría%20hacer%20una%20reserva" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-icon" aria-label="Enviar WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=37.8922505,-4.7668249" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-icon" aria-label="Cómo llegar en Google Maps">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Cómo llegar
+            </a>
+          </div>
+        </div>
+        <div class="location-map" aria-label="Mapa de Google Maps mostrando la ubicación de Nueva Ronda">
+          <iframe
+            title="Mapa de ubicación de Nueva Ronda"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=37.8922505,-4.7668249&center=37.8922505,-4.7668249&zoom=16&language=es"
+            width="100%"
+            height="400"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT / RESERVAS ========== -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title" id="contact-title">Reservas y consultas</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-desc">¿Quieres reservar mesa, hacer un pedido para llevar o simplemente saludarnos? Estaremos encantados de atenderte.</p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate aria-label="Formulario de contacto">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="formName" class="form-label">Nombre *</label>
+            <input type="text" id="formName" name="name" class="form-input" placeholder="Tu nombre" required aria-required="true" autocomplete="name">
+            <span class="form-error" id="nameError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="formEmail" class="form-label">Email *</label>
+            <input type="email" id="formEmail" name="email" class="form-input" placeholder="tu@email.com" required aria-required="true" autocomplete="email">
+            <span class="form-error" id="emailError" role="alert"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="formPhone" class="form-label">Teléfono</label>
+            <input type="tel" id="formPhone" name="phone" class="form-input" placeholder="+34 600 000 000" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="formPeople" class="form-label">Comensales</label>
+            <select id="formPeople" name="people" class="form-input">
+              <option value="">Selecciona</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6">6+ personas</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="formMessage" class="form-label">Mensaje *</label>
+          <textarea id="formMessage" name="message" class="form-input form-textarea" rows="4" placeholder="Cuéntanos qué necesitas..." required aria-required="true"></textarea>
+          <span class="form-error" id="msgError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">
+          Enviar mensaje
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <p class="form-disclaimer">Al enviar aceptas nuestra política de privacidad. No compartiremos tus datos con terceros.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio" title="Volver arriba">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Nueva <span class="logo-accent">Ronda</span></span>
+          <p class="footer-desc">Tapas tradicionales andaluzas desde 1998. Un clásico del Distrito Sur de Córdoba.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/barrondacordoba" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Nueva Ronda">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#FDFBF7"/></svg>
+            </a>
+            <a href="https://www.facebook.com/barrondacordoba" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Nueva Ronda">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Enlaces</h4>
+          <ul>
+            <li><a href="#about">Sobre nosotros</a></li>
+            <li><a href="#menu">Especialidades</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#reviews">Opiniones</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Horario</h4>
+          <ul class="footer-schedule">
+            <li><span>Lun–Vie</span><span>7:00–19:00</span></li>
+            <li><span>Sábado</span><span>8:30–14:00</span></li>
+            <li><span>Domingo</span><span>Cerrado</span></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 class="footer-heading">Contacto</h4>
+          <ul>
+            <li><a href="tel:+34957290801">957 29 08 01</a></li>
+            <li><a href="mailto:contacto@barronda.es">contacto@barronda.es</a></li>
+            <li><address>Calle Ronda, S/N, 14013 Córdoba</address></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nueva Ronda. Todos los derechos reservados.</p>
+        <p class="footer-legal">
+          <a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
