@@ -45,7 +45,7 @@ Arrastrar la carpeta `nueva-ronda/` al panel de Netlify o Vercel, o conectar el 
 ## Personalización
 
 - **Imágenes**: Reemplazar los SVG inline en `index.html` por imágenes reales en `assets/`
-- **Teléfono**: Actualizar `+34957290801` si cambia
+- **Teléfono**: Actualizar `+34647993448` si cambia
 - **Horarios**: Revisar apertura domingos / festivos en el Schema.org
 - **Google Maps API key**: Sustituir `AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8` por una clave propia
 
